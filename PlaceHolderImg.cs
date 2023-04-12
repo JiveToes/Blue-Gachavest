@@ -13,7 +13,7 @@ public class PlaceHolderImg : MonoBehaviour
     {
         MyImage.AddComponent(typeof(Image));
         defaultImg = Resources.Load<Sprite>("Assets/Sprites/Placeholder");
-        MyImage.GetComponent(typeof(Image)) = defaultImg;
+        MyImage.GetComponent(typeof(Image))() = defaultImg;
         Debug.Log("Placeholder image grabbed");
 
     }
